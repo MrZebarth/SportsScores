@@ -24,10 +24,11 @@ for i in range(numTeams):
     print(f"What's the team name for team #{i+1}?")
     team.append(input())
     team.extend(0 for i in range(6))
-    print(team)
     teams.append(team)
-print(teams)
 
+print("\nTeams entered! This season we have:")
+for i in teams:
+    print(f"- {i[0]}")
 # Start an infinite loop for main menu
 #   1) Add score
 #   2) See Team stats
